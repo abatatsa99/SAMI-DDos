@@ -47,12 +47,12 @@ def initHeaders():
         useragent_list()
         global headers_useragents, additionalHeaders
         headers = {
-                                'User-Agent': random.choice(headers_useragents),
-                                'Cache-Control': 'no-cache',
-                                'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
-                                'Referer': 'http://www.google.com/?q=' + randomString(random.randint(5,10)),
-                                'Keep-Alive': str(random.randint(110,120)),
-                                'Connection': 'keep-alive'
+                 'User-Agent': random.choice(headers_useragents),
+                 'Cache-Control': 'no-cache',
+                 'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
+                 'Referer': 'http://www.google.com/?q=' + randomString(random.randint(5,10)),
+                 'Keep-Alive': str(random.randint(110,120)),
+                 'Connection': 'keep-alive'
                                 }
         if additionalHeaders:
                 for header in additionalHeaders:
